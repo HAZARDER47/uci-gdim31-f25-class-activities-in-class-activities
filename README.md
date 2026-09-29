@@ -1,8 +1,7 @@
 # in-class-activities
 ## Devlogs
 ### W1
-Write your W1 activity Devlog here.
-
+If you move the Camera off the Cat GameObject, you will get a second-person perspective similar to a monitor view.
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
 
