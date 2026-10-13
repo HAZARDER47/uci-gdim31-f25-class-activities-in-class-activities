@@ -8,6 +8,23 @@ If you move the Camera off the Cat GameObject, you will get a second-person pers
 2. The _bounce variable is an int because it counts the number of bounces, and the number of bounces should be a whole number.
 
 3. The error told me that the line was missing a semicolon. In C#, a statement usually needs a semicolon at the end.
+### W3
+#Table 11
+Activity 1:
+1. Parameters (Input): An `int` for the player's current friendship level, and a `bool` flag for whether the player knows the character's secret.
+Return Type (Output)**: A `string` representing the character's text response.
+2. Parameters (Input): A `float` representing the player's current sanity level (from 0.0 to 1.0 or 0 to 100).
+Return Type (Output): `void` (no output needed, since the method directly modifies the room's lights).
+3. Parameters (Input): A `float` representing the exact time the player pressed the key.
+Return Type (Output): A `bool` (true or false) indicating whether the player accurately hit the beat.
+
+Activity 2:
+Metaphor: Think of a Class as a blueprint or an instruction manual for building a specific type of robot. A Component is the actual, physical robot that has been built from that blueprint and attached to a specific workstation (the GameObject).
+Member Variables: These are the physical specifications and traits of that specific robot (e.g., its current battery level, its color, or its speed limit).
+Methods: These are the specific actions the robot is programmed to perform on command (e.g., move forward, jump, or shut down).
+
+Activity 3:
+The balls get extremely bright because of the GetColorMultiplier method logic combined with the color multiplication in Step 9. Every time a ball bounces and its average speed exceeds the _speedThreshold, the method returns a multiplier of 1.5. The script then takes the current RGB color values of the SpriteRenderer and multiplies them by 1.5. In Unity, standard color values are clamped between 0 and 1. By continuously multiplying the color by a number greater than 1, the RGB values stack and quickly exceed standard bounds. This causes the sprite's material to render the values as overexposed or "blown out," resulting in that extreme, glowing white "super-saiyan" effect.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
