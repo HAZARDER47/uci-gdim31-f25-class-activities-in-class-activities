@@ -25,6 +25,16 @@ Methods: These are the specific actions the robot is programmed to perform on co
 
 Activity 3:
 The balls get extremely bright because of the GetColorMultiplier method logic combined with the color multiplication in Step 9. Every time a ball bounces and its average speed exceeds the _speedThreshold, the method returns a multiplier of 1.5. The script then takes the current RGB color values of the SpriteRenderer and multiplies them by 1.5. In Unity, standard color values are clamped between 0 and 1. By continuously multiplying the color by a number greater than 1, the RGB values stack and quickly exceed standard bounds. This causes the sprite's material to render the values as overexposed or "blown out," resulting in that extreme, glowing white "super-saiyan" effect.
+### W4
+1. Collider Activity
+I added a Capsule Collider and Rigidbody to the Cat, a Sphere Collider and Rigidbody to the SoccerBall, and a Box Collider to the Goal. I enabled Is Trigger only on the Goal so the ball could pass through it and still detect a goal. I also adjusted the colliders to fit the objects and used Freeze Rotation to prevent them from falling over.
+
+2. Problems and Solutions
+At first, I had trouble connecting the Rigidbody to the Cat script, but I fixed it by assigning the correct component in the Inspector. I also noticed that the soccer ball sometimes fell off the map when I changed the Bounce Force.
+
+3. What I Completed
+I added collision detection using OnTriggerEnter and used CompareTag to check whether the ball entered the Goal. I also created a MadeGoal method to play the celebration effect, update the points, and reset the timer after each goal.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
