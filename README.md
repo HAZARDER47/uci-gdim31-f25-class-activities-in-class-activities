@@ -40,6 +40,30 @@ At first, I had trouble connecting the Rigidbody to the Cat script, but I fixed 
 
 I added collision detection using OnTriggerEnter and used CompareTag to check whether the ball entered the Goal. I also created a MadeGoal method to play the celebration effect, update the points, and reset the timer after each goal.
 
+### W6
+Plan for the DeerW5 Class
+
+For this activity, I plan to create a DeerW5 class that makes the deer walk toward a target using Unity’s NavMesh system.
+
+What member variables does this class need?
+
+A Transform variable named target to reference the object the deer will walk toward. I will use [SerializeField] so I can assign the target in the Inspector.
+
+A NavMeshAgent variable named agent to store the deer’s navigation component.
+
+What methods does this class need?
+
+I will use Unity’s Start() method because the deer only needs to receive its destination when the game begins. For a stationary target, I do not need to update the destination every frame.
+
+What should the method do?
+
+In Start(), I will use GetComponent<NavMeshAgent>() to get the navigation component attached to the Deer GameObject. Then, if a target has been assigned, I will call agent.SetDestination(target.position) to make the deer walk toward it.
+
+Testing Plan
+
+I will attach the DeerW5 script to the Deer GameObject and assign Mushroom_red as its target in the Inspector. Then I will enter Play mode and check whether the deer moves toward the mushroom.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
