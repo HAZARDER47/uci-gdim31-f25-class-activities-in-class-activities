@@ -62,7 +62,30 @@ In Start(), I will use GetComponent<NavMeshAgent>() to get the navigation compon
 Testing Plan
 
 I will attach the DeerW5 script to the Deer GameObject and assign Mushroom_red as its target in the Inspector. Then I will enter Play mode and check whether the deer moves toward the mushroom.
+### W7
 
+**Activity 1: Class Resource Guide**
+
+My assigned category was Other Tools. I focused on GitHub and YouTube, including how GitHub works and useful tips.
+
+Google Doc: https://docs.google.com/document/d/1iBZihNlx92b16mfK2TXGr1CYtdDQOOh7vAeKN-P9YfU
+
+**Activity 2: Pair Programming**
+
+**Planning Notes:**
+
+- Member variables: speed, player Transform, and a boolean to control chasing.
+- Methods: Update(), ChasePlayer(), and StopChasingPlayer().
+- Update() moves the bat toward the player when chasing is enabled.
+- ChasePlayer() enables chasing, while StopChasingPlayer() disables it.
+
+**Implementation:**
+
+I created the BatW6 class to control bat movement. I also completed the BatManager script using arrays and for loops to manage multiple bats, check their distance from the player, and display random messages when they get close.
+
+**What I Learned:**
+
+I learned how to use arrays and for loops to manage multiple GameObjects. I also practiced using public methods to communicate between scripts and Time.deltaTime to make movement frame-rate independent.
 
 ## Open-Source Assets
 ### W1
