@@ -45,17 +45,15 @@ Plan for the DeerW5 Class
 
 For this activity, I plan to create a DeerW5 class that makes the deer walk toward a target using Unity’s NavMesh system.
 
-What member variables does this class need?
 
 A Transform variable named target to reference the object the deer will walk toward. I will use [SerializeField] so I can assign the target in the Inspector.
 
+
 A NavMeshAgent variable named agent to store the deer’s navigation component.
 
-What methods does this class need?
 
 I will use Unity’s Start() method because the deer only needs to receive its destination when the game begins. For a stationary target, I do not need to update the destination every frame.
 
-What should the method do?
 
 In Start(), I will use GetComponent<NavMeshAgent>() to get the navigation component attached to the Deer GameObject. Then, if a target has been assigned, I will call agent.SetDestination(target.position) to make the deer walk toward it.
 
@@ -86,6 +84,9 @@ I created the BatW6 class to control bat movement. I also completed the BatManag
 **What I Learned:**
 
 I learned how to use arrays and for loops to manage multiple GameObjects. I also practiced using public methods to communicate between scripts and Time.deltaTime to make movement frame-rate independent.
+### W8
+
+In Step 2, Vector3.forward always pointed along the world’s positive Z axis. After I turned the Muskrat with A or D, pressing W still moved it along that same world axis. I changed it to transform.forward so W and S move it forward and backward relative to the direction it is facing.
 
 ## Open-Source Assets
 ### W1
