@@ -88,6 +88,21 @@ I learned how to use arrays and for loops to manage multiple GameObjects. I also
 
 In Step 2, Vector3.forward always pointed along the world’s positive Z axis. After I turned the Muskrat with A or D, pressing W still moved it along that same world axis. I changed it to transform.forward so W and S move it forward and backward relative to the direction it is facing.
 
+###W9
+Table: 8
+Member: Anzhe Huang, Gaozan Ye, Wei Chen
+
+Assigned Section: UI, Kickable Items
+
+Drawing Link: https://docs.google.com/drawings/d/1286u662xloXkmZQefktn-Hat1Bzrf9WbO-rhysgP6_E/
+
+Worked with my group to plan the final project.
+
+Focused on the UI system and identified the necessary GameObjects and Components.
+
+Discussed how the UI interacts with other game systems.
+
+Created a diagram to help organize the structure of the UI before coding.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
